@@ -20,11 +20,11 @@ const About = () => {
       desc: "Developing modern, responsive, and interactive web applications using React.js, Redux, and JavaScript.",
       details: (
         <>
-          <h2>Projects at TCS</h2>
+          <h2>Roles & Responsibilities</h2>
           <ul>
-            <li>Developed an internal dashboard for financial analytics.</li>
-            <li>Created reusable React component library for enterprise apps.</li>
-            <li>Worked with cross-functional teams to deliver high-impact solutions.</li>
+            <li>Built responsive and performant web apps with React.js, Reactflow, and TypeScript</li>
+            <li>CLed UI development ensuring pixel-perfect layouts based on Figma designs.</li>
+            <li>Implemented scalable architecture with Redux, Context API, and Hooks.</li>
           </ul>
         </>
       )
@@ -52,7 +52,7 @@ const About = () => {
           <h2>Undergraduate (BCA)</h2>
           <p>
             Learned fundamentals of programming, data structures, and web tech.  
-            Built an <b>online library management system</b> for final year project.
+            Built an <b>online Fitness management system</b> for final year project.
           </p>
         </>
       )

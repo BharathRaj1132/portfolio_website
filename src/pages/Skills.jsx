@@ -14,9 +14,14 @@ const Skills = () => {
   ];
 
   const certifications = [
-    { title: "React Developer Certification", link: "https://example.com/react-cert" },
-    { title: "JavaScript Advanced Certificate", link: "https://example.com/js-cert" },
-    { title: "HTML5 & CSS3 Mastery", link: "https://example.com/html-css-cert" },
+    { title: "React.js Essentials", link: "https://verify.letsupgrade.in/certificate/LUERJSJUN123259" },
+    { title: "Webpack basics", link: "https://www.udemy.com/certificate/UC-2da0a08a-293c-49f8-8835-1987bffeb274/" },
+    { title: "Microsoft Certified Azure Fundamentals", link: "https://learn.microsoft.com/en-us/users/bharathrajs-1739/credentials/fbf15ef256486f6?ref=https%3A%2F%2Fwww.linkedin.com%2F" },
+    { title: "Linux Administration with command line", link: "https://www.udemy.com/certificate/UC-1e482489-72e1-4059-a948-442aa65c8d9b/" },
+    { title: "Carrier essentials in generative AI", link: "https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin?trk=share_android_learning_path_learning&shareId=MzQHZLpIRfGeMsCtOcHnCQ%3D%3D" },
+    { title: "SQL Essentials", link: "https://verify.letsupgrade.in/certificate/LUESQLJUL123596" },
+    { title: "HTML & CSS Bootcamp", link: "https://verify.letsupgrade.in/certificate/LUEHTMLJUL123244" },
+    
   ];
 
   return (

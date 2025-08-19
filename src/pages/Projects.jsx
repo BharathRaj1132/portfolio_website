@@ -14,7 +14,7 @@ const Projects = () => {
       desc: "A modern portfolio website built with React and Framer Motion.",
       detail: "This project showcases my skills in building smooth animations, reusable components, and responsive UI with Framer Motion. " +
               "Here I experimented with transitions, optimized performance, and styled clean UI components to showcase my work effectively.",
-      link: "https://your-portfolio-demo-link.com" 
+      link: "https://portfolio-website-rho-nine-25.vercel.app/" 
     },
     { 
       img: proj2, 
@@ -29,8 +29,6 @@ const Projects = () => {
       title: "Task Management App", 
       desc: "Interactive task organizer with calendar-based scheduling.",
       detail: "A calendar-driven task app allowing users to add, complete, and schedule tasks. Built with React hooks. " +
-              "It helps users organize their day-to-day workflow and boost productivity.A calendar-driven task app allowing users to add, complete, and schedule tasks. Built with React hooks. " +
-              "It helps users organize their day-to-day workflow and boost productivity.A calendar-driven task app allowing users to add, complete, and schedule tasks. Built with React hooks. " +
               "It helps users organize their day-to-day workflow and boost productivity.",
       link: "https://calendar-task-app-lilac.vercel.app/" 
     },
