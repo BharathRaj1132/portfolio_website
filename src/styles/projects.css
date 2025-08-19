@@ -1,0 +1,132 @@
+.projects {
+  padding: 70px 6%;
+  background: transparent;
+  text-align: center;
+  color: var(--text);
+}
+
+.projects-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+  color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 30px auto 0;
+}
+
+/* Flip Card Styles */
+.project-card {
+  perspective: 1000px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.4);
+}
+
+/* Front side */
+.card-front {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-front .project-content {
+  padding: 16px;
+  text-align: left;
+}
+.card-front .project-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.card-front .project-content p {
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* Back side */
+.card-back {
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Scrollable container inside back side */
+.card-back-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;   /* no scrollbar visible */
+  padding: 20px;
+  text-align: center;
+}
+
+.card-back-content h2 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.card-back-content p {
+  margin-bottom: 18px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.project-btn {
+  display:inline-block;
+  padding:10px 18px;
+  background: linear-gradient(90deg,var(--accent),var(--accent-2));
+  color: #fff;
+  border-radius: 8px;
+  font-weight:600;
+  text-decoration:none;
+  transition: transform .18s ease;
+}
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6);
+}

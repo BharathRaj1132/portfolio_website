@@ -1,0 +1,155 @@
+/* index.css - global theme, load first */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  --bg: #0b1220;           /* page background */
+  --surface: #0f1724;      /* surfaces / cards */
+  --muted-surface: #0b1620;/* slightly different surface */
+  --text: #e6eef8;         /* primary text */
+  --muted: #9fb0c3;        /* secondary text */
+  --accent: #d4a017;       /* warm gold accent */
+  --accent-2: #b88e2f;     /* darker gold */
+  --accent-3: #67cfc7;     /* cool secondary accent (rare) */
+  --glass: rgba(255,255,255,0.03);
+  --card-border: rgba(255,255,255,0.04);
+  --shadow: 0 8px 24px rgba(2,6,23,0.6);
+  --radius: 12px;
+  --gap: 20px;
+}
+
+/* global reset + base */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* links */
+a { color: var(--accent); text-decoration: none; transition: color .18s ease; }
+a:hover { color: var(--accent-2); text-decoration: underline; }
+
+/* generic buttons (use .btn for anchor-button consistency) */
+button, .btn {
+  font-family: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #1f0c35;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+button:hover, .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.45); }
+
+/* headings */
+h1,h2,h3,h4,h5 { color: var(--text); margin: 0 0 12px 0; font-weight:600; }
+
+/* small helpers */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 4%; }
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* === Custom Cursor === */
+.custom-cursor {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.12s ease-out, background 0.25s ease;
+}
+
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: translate(-50%, -50%) scale(1.8);
+  background: var(--accent);
+}
+
+/* =========================
+   Custom Cursor (desktop)
+   ========================= */
+@media (pointer: fine) {
+  /* Hide OS cursor on desktop only */
+  body,
+  a, button, .btn,
+  input, textarea, select {
+    cursor: none !important;
+  }
+
+  .cursor-ring,
+  .cursor-dot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;   /* never block clicks/hover */
+    z-index: 9999;
+    will-change: left, top, transform, opacity;
+    transition: opacity .2s ease;
+  }
+
+  /* Outer ring */
+  .cursor-ring {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 22px rgba(212,160,23,0.22);
+    background: radial-gradient(transparent 55%, rgba(212,160,23,0.08) 56%);
+    backdrop-filter: blur(1px);
+    transition: width .15s ease, height .15s ease, border-color .2s ease, box-shadow .2s ease, opacity .2s ease;
+  }
+
+  /* Inner dot */
+  .cursor-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px rgba(212,160,23,0.45);
+    transition: transform .12s ease, opacity .2s ease, background .2s ease;
+  }
+
+  /* Hovering interactive targets → grow ring, shrink dot slightly */
+  .cursor-ring.cursor-hover {
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 0 26px rgba(212,160,23,0.35);
+    background: radial-gradient(transparent 58%, rgba(212,160,23,0.12) 59%);
+  }
+  .cursor-dot.cursor-hover {
+    transform: scale(0.85);
+  }
+
+  /* Hidden state when leaving window, etc. */
+  .cursor-ring.cursor-hidden,
+  .cursor-dot.cursor-hidden {
+    opacity: 0;
+  }
+}
+
+/* On touch devices we just don’t show the custom cursor */
+@media (pointer: coarse) {
+  .cursor-ring,
+  .cursor-dot {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,53 @@
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #0d1117; /* dark portfolio theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 0.6s ease forwards;
+  animation-delay: 2s;
+}
+
+/* Dots Loader */
+.loader {
+  display: flex;
+  gap: 12px;
+}
+
+.loader span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #b88e2f; /* accent color */
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Animations */
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
