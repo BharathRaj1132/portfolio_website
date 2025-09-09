@@ -34,11 +34,10 @@ const Projects = () => {
     },
     { 
       img: proj4, 
-      title: "Blog Platform", 
-      desc: "A React-based blog platform with dynamic posts and comments.",
-      detail: "This app features blog creation, commenting system, and a clean design, structured with React Router and Context. " +
-              "Users can write, edit, and manage blog posts with ease.",
-      link: "https://github.com/yourusername/blog-app" 
+      title: "Contact Form", 
+      desc: "A React-based contact form.",
+      detail: "This app features are you can see the details after submission of form and you can download the data in .csv format.",
+      link: "https://contact-form-two-henna.vercel.app/" 
     }
   ];
 
