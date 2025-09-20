@@ -5,6 +5,8 @@ import proj1 from "../assets/project1.png";
 import proj2 from "../assets/project2.jpg";
 import proj3 from "../assets/project3.jpg";
 import proj4 from "../assets/project4.jpg";
+import proj5 from "../assets/project5.jpg";
+import proj6 from "../assets/project6.jpg";
 
 const Projects = () => {
   const projects = [
@@ -38,7 +40,22 @@ const Projects = () => {
       desc: "A React-based contact form.",
       detail: "This app features are you can see the details after submission of form and you can download the data in .csv format.",
       link: "https://contact-form-two-henna.vercel.app/" 
+    },
+    { 
+      img: proj5, 
+      title: "Betting Website", 
+      desc: "A React Based online betting webiste",
+      detail: "This app features are you can see the details after submission of form and you can download the data in .csv format.",
+      link: "https://bharathraj1132.github.io/nsblpa-prototype/" 
+    },
+    { 
+      img: proj6, 
+      title: "Crypto Currency Website", 
+      desc: "A React-based crypto currency website",
+      detail: "This app features are you can see the details after submission of form and you can download the data in .csv format.",
+      link: "https://contact-form-two-henna.vercel.app/" 
     }
+
   ];
 
   // Function for smooth auto-scroll
