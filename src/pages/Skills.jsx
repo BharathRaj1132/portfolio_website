@@ -11,6 +11,9 @@ const Skills = () => {
     { name: "Bootstrap", level: 87 },
     { name: "Git / GitHub", level: 80 },
     { name: "Responsive Design", level: 90 },
+    { name: "Zustand", level: 75 },
+    { name: "Perfomance Optimization", level: 88 },
+    { name: "Tailwind CSS", level: 70 },
   ];
 
   const certifications = [
