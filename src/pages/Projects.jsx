@@ -7,6 +7,7 @@ import proj3 from "../assets/project3.jpg";
 import proj4 from "../assets/project4.jpg";
 import proj5 from "../assets/project5.jpg";
 import proj6 from "../assets/project6.jpg";
+import proj7 from "../assets/project3.jpg";
 
 const Projects = () => {
   const projects = [
@@ -45,16 +46,23 @@ const Projects = () => {
       img: proj5, 
       title: "Betting Website", 
       desc: "A React Based online betting webiste",
-      detail: "This app features are you can see the details after submission of form and you can download the data in .csv format.",
+      detail: "A modern betting platform built with React, offering real-time odds, match listings, secure user flow, and intuitive UI for placing bets, tracking results, and managing user activity with smooth performance.",
       link: "https://bharathraj1132.github.io/nsblpa-prototype/" 
     },
     { 
       img: proj6, 
       title: "Crypto Currency Website", 
       desc: "A React-based crypto currency website",
-      detail: "This app features are you can see the details after submission of form and you can download the data in .csv format.",
-      link: "https://contact-form-two-henna.vercel.app/" 
-    }
+      detail: "A responsive cryptocurrency dashboard built with React, featuring live API-based price updates, coin search, detailed coin pages, interactive charts, and smooth UI/UX to track market trends in real time.",
+      link: "https://crypto-dashboard-three-indol.vercel.app/" 
+    },
+    { 
+      img: proj7, 
+      title: "SaaS dashboard", 
+      desc: "A responsive SaaS dashboard built with React",
+      detail: "It's featuring real-time analytics, dynamic charts, user management, role-based access, API-driven data updates, and an intuitive interface designed for monitoring business metrics and improving decision-making.",
+      link: "https://saas-dashboard-sage.vercel.app/" 
+    },
 
   ];
 
