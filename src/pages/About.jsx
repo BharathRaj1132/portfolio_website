@@ -15,7 +15,7 @@ const About = () => {
 
   const timeline = [
     {
-      year: "Aug 2022 - Present",
+      year: "Aug 2022 - Feb 2026",
       title: "Frontend Developer at TCS",
       desc: "Developing modern, responsive, and interactive web applications using React.js, Redux, and JavaScript.",
       details: (
