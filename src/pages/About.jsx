@@ -15,7 +15,6 @@ const About = () => {
 
   const timeline = [
     {
-<<<<<<< HEAD
       year: "Apr 2026 - Present",
       title: "Development Engineer at COMCAST",
       desc: "Developing modern, responsive, and interactive web applications using React.js, Redux, and JavaScript.",
@@ -31,8 +30,6 @@ const About = () => {
       )
     },
     {
-=======
->>>>>>> 07406f2113cb7b4e370005909f89c4888c3ed7a1
       year: "Aug 2022 - Feb 2026",
       title: "Frontend Developer at TCS",
       desc: "Developing modern, responsive, and interactive web applications using React.js, Redux, and JavaScript.",
