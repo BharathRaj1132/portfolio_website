@@ -15,7 +15,22 @@ const About = () => {
 
   const timeline = [
     {
-      year: "Aug 2022 - Present",
+      year: "Apr 2026 - Present",
+      title: "Development Engineer at COMCAST",
+      desc: "Developing modern, responsive, and interactive web applications using React.js, Redux, and JavaScript.",
+      details: (
+        <>
+          <h2>Roles & Responsibilities</h2>
+          <ul>
+            <li>Built responsive and performant web apps with React.js, Reactflow, and TypeScript</li>
+            <li>Lead UI development ensuring pixel-perfect layouts based on Figma designs.</li>
+            <li>Implemented scalable architecture with Redux, Context API, and Hooks.</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      year: "Aug 2022 - Feb 2026",
       title: "Frontend Developer at TCS",
       desc: "Developing modern, responsive, and interactive web applications using React.js, Redux, and JavaScript.",
       details: (
@@ -23,7 +38,7 @@ const About = () => {
           <h2>Roles & Responsibilities</h2>
           <ul>
             <li>Built responsive and performant web apps with React.js, Reactflow, and TypeScript</li>
-            <li>CLed UI development ensuring pixel-perfect layouts based on Figma designs.</li>
+            <li>Lead UI development ensuring pixel-perfect layouts based on Figma designs.</li>
             <li>Implemented scalable architecture with Redux, Context API, and Hooks.</li>
           </ul>
         </>

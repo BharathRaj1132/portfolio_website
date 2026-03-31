@@ -8,6 +8,7 @@ import proj4 from "../assets/project4.jpg";
 import proj5 from "../assets/project5.jpg";
 import proj6 from "../assets/project6.jpg";
 import proj7 from "../assets/project3.jpg";
+import proj8 from "../assets/project8.jpg";
 
 const Projects = () => {
   const projects = [
@@ -62,6 +63,13 @@ const Projects = () => {
       desc: "A responsive SaaS dashboard built with React",
       detail: "It's featuring real-time analytics, dynamic charts, user management, role-based access, API-driven data updates, and an intuitive interface designed for monitoring business metrics and improving decision-making.",
       link: "https://saas-dashboard-sage.vercel.app/" 
+    },
+    { 
+      img: proj8, 
+      title: "Wedding Invitation", 
+      desc: "A wedding invitation website",
+      detail: "It's showing about the events details, countdown, and venue details of the wedding",
+      link: "https://wedding-invite-amber-pi.vercel.app/?_vercel_share=dsp4rqbL1vOUlg0kLE4nkfUdYJOPOtRU" 
     },
 
   ];
